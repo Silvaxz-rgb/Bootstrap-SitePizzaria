@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
         integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- fonte MClaren -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg py-0">
+    <nav class="navbar navbar-expand-lg py-0 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand pt-0 ps-5" href="index.html">
 
                 <!-- Logo da Loja -->
-                <img src="./img/logotipos/logotipo_menu.png" alt="logotipo da pizzaria TestaResto" height="80">
+                <img src="./img/logotipos/logotipo_menu.png" alt="logotipo da pizzaria TestaResto" height="85">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -38,7 +46,7 @@
                         <a class="nav-link" href="#cardapio">Cardapio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#contato.html">Contato</a>
+                        <a class="nav-link" href="#contato.html">Contato</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -55,6 +63,47 @@
             </div>
         </div>
     </nav>
+
+    <!-- Carrrossel -->
+    <section id="carrossel">
+        <div id="carrosselPizzaria" class="carousel slide carousel-dark carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselPizzaria" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrosselPizzaria" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner/banner_marguerita.jpg" class="d-block w-100" alt="banner pizza marguerita">
+                    <div class="carousel-caption">
+                        <h1>Melhor Escolha<br> <span>Marguerita</span> </h1>
+                        <p class="d-none d-lg-block">Nossa pizza marguerita é a combinação perfeita de molho de tomate artesanal, mussarela
+                            derretida e folhas frescas de manjericão, resultando em um sabor clássico, leve e
+                            irresistivelmente delicioso.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner/banner_calabresa.jpg" class="d-block w-100" alt="banner pizza calabresa">
+                    <div class="carousel-caption">
+                        <h1>Melhor Lugar<br> <span>TestaResto</span> </h1>
+                        <p class="d-none d-lg-block">Na TestaResto, cada pizza é feita com paixão e ingredientes selecionados. Unimos tradição e
+                            sabor para oferecer uma experiência única a cada fatia.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPizzaria"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselPizzaria"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
     <!-- CDN do java script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
