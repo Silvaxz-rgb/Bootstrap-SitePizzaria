@@ -1,3 +1,7 @@
+.font-laren {
+    font-family: "McLaren", cursive, system-ui !important;
+}
+
 .carousel-caption {
     left: 50% !important;
     right: 12% !important;
@@ -14,6 +18,16 @@
 
     .carousel-caption h1 span {
         font-size: 3rem !important;
+    }
+
+    .img-h1 {
+        height: calc(1.35rem + 1.5vw);
+    }
+
+    .selo {
+        height: calc(1.35 + 1.5vw);
+        bottom: -50px !important;
+        left: -50px !important;
     }
 }
 
@@ -50,4 +64,27 @@
     color: rgb(54, 54, 54);
     font-size: 1.1rem;
     font-family: system-ui;
+}
+
+.texto-vermelho {
+    font-family: "McLaren", cursive, system-ui;
+    text-shadow: 3px 3px 5px grey;
+    color: rgb(201, 6, 6);
+}
+
+.img-h1 {
+    height: 3rem;
+}
+
+.mb-6 {
+    margin-bottom: 7.8rem;
+}
+
+.selo {
+    bottom: -50px !important;
+    left: -50px !important;
+}
+
+.mt-6 {
+    margin-top: 6rem;
 }
