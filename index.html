@@ -22,7 +22,7 @@
 
 <body>
     <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg py-0 fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg py-0 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand pt-0 ps-5" href="index.html">
 
@@ -109,7 +109,7 @@
     </section>
     <!-- section quem somos -->
     <section id="quem_somos" class="container">
-        <div class="mt-5 py-5 position-relative rounded-4 px-1 px-md-5 shadow">
+        <div class="mt-5 py-5 position-relative rounded-4 px-1 px-md-5 shadow card">
             <h5 class="text-center mb-0">Bem Vindo!</h5>
             <h1 class="text-center font-laren texto-vermelho">Quem somos
                 <img class="img-h1" src="./img/logotipos/italy.png" alt="italy">
@@ -139,12 +139,12 @@
 
     <section id="cardapio" class="mt-6 container-fluid bg-body-tertiary">
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
                 <div class="my-5 p-4">
-                    <img class="img-fluid px-4" src="./img/cardapio/pizza_italiana.png" alt="">
+                    <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_italiana_color.png" alt="">
                     <div class="text-center mt-3">
-                        <h5 class="font-laren">Pizza Italiana</h5>
-                        <p>Muzzarela, champignon, azeitona e tomate</p>
+                        <h5 class="font-laren">PIZZA ITALIANA</h5>
+                        <p>Muzzarela, manjericão fresco, champignon, azeitona e tomate</p>
                         <div class="row">
                             <div class="col ">
                                 <hr>
@@ -154,15 +154,226 @@
                                 <hr>
                             </div>
                         </div>
+                        <ul class="list-group text-start list-group-flush">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="p"
+                                        id="pizza1P">
+                                    <label class="form-check-label" for="pizza1P">22cm</label>
+                                </div>
+                                <span>R$ 30,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="m"
+                                        id="pizza2M">
+                                    <label class="form-check-label" for="pizza2M">29cm</label>
+                                </div>
+                                <span>R$ 42,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="g"
+                                        id="pizza3G">
+                                    <label class="form-check-label" for="pizza3G">35cm</label>
+                                </div>
+                                <span>R$ 50,00</span>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">Coluna 2</div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">Coluna 3</div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">Coluna 4</div>
+            <!-- PIZZA 2 - Marguerita -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_marguerita_color.png" alt="">
+                    <div class="text-center mt-3">
+                        <h5 class="font-laren">PIZZA MARGUERITA</h5>
+                        <p>Muzzarela, manjericão fresco, azeitona e tomate</p>
+                        <div class="row">
+                            <div class="col ">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start list-group-flush">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="p"
+                                        id="pizza1P">
+                                    <label class="form-check-label" for="pizza1P">22cm</label>
+                                </div>
+                                <span>R$ 30,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="m"
+                                        id="pizza2M">
+                                    <label class="form-check-label" for="pizza2M">29cm</label>
+                                </div>
+                                <span>R$ 42,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="g"
+                                        id="pizza3G">
+                                    <label class="form-check-label" for="pizza3G">35cm</label>
+                                </div>
+                                <span>R$ 50,00</span>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIZZA 3 - Peperroni -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_pepperoni_color.png" alt="">
+                    <div class="text-center mt-3">
+                        <h5 class="font-laren">PIZZA PEPERRONI</h5>
+                        <p>Muzzarela, peperroni, champignon, manjericão fresco, azeitona e tomate</p>
+                        <div class="row">
+                            <div class="col ">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start list-group-flush">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="p"
+                                        id="pizza1P">
+                                    <label class="form-check-label" for="pizza1P">22cm</label>
+                                </div>
+                                <span>R$ 30,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="m"
+                                        id="pizza2M">
+                                    <label class="form-check-label" for="pizza2M">29cm</label>
+                                </div>
+                                <span>R$ 42,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="g"
+                                        id="pizza3G">
+                                    <label class="form-check-label" for="pizza3G">35cm</label>
+                                </div>
+                                <span>R$ 50,00</span>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIZZA4 - Vegetariana -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_vegetariana_color.png" alt="">
+                    <div class="text-center mt-3">
+                        <h5 class="font-laren">VEGETARIANA</h5>
+                        <p>Manjericão fresco, azeitona e tomate</p>
+                        <div class="row">
+                            <div class="col ">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start list-group-flush">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="p"
+                                        id="pizza1P">
+                                    <label class="form-check-label" for="pizza1P">22cm</label>
+                                </div>
+                                <span>R$ 30,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="m"
+                                        id="pizza2M">
+                                    <label class="form-check-label" for="pizza2M">29cm</label>
+                                </div>
+                                <span>R$ 42,00</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value="g"
+                                        id="pizza3G">
+                                    <label class="form-check-label" for="pizza3G">35cm</label>
+                                </div>
+                                <span>R$ 50,00</span>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <section id="#produtos">
+        <div class="container mt-5 p-3">
+            <h1 class="text-center font-laren texto-vermelho">Nossos
+                Produtos
+                <img class="img-h1" src="./img/logotipos/italy.png" alt="italy">
+                <br>
+                <hr class="text-black border-2">
+            </h1>
+            <div class="row">
+                <div class="col-12">
+                    <img src="./img/index/toldo.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 col-12">
+                    <img src="./img/index/vegetais.png" class="img-fluid"  alt="">
+                </div>
+                <div class="col-md-6 col-12 p-4">Do produtor direto para o seu prato</div>
+            </div>
+        </div>
+    </section>
+
+
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -179,10 +390,32 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
 
-    <!-- CDN do java script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
-        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Carrinho</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary border-0 bg-success">Salvar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- linkagem do SCRIPT js -->
+        <script src="./js/script.js"></script>
+
+        <!-- CDN do java script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
+            integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
